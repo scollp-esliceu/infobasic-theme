@@ -1,0 +1,47 @@
+# Ignorar archivos de editores y IDEs
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignorar node_modules (si usas npm, Gulp, Webpack, etc.)
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Ignorar vendor/composer (si usas Composer)
+vendor/
+
+# Ignorar archivos de build/compilación
+dist/
+build/
+*.min.css
+*.min.js
+
+# Ignorar archivos temporales y de backup
+*.bak
+*.tmp
+*~
+.sass-cache/
+.cache/
+
+# Ignorar logs y bases de datos locales
+*.log
+*.sql
+*.sqlite
+
+# Ignorar archivos de configuración local (si tienes alguno específico)
+.env
+.local
+
+# Ignorar screenshots y archivos no necesarios para el tema
+screenshot.png  # Si no quieres versionar la captura (opcional, muchos la incluyen)
+languages/*.mo  # Archivos compilados de traducción (los .pot y .po sí se versionan)
+
+# Archivos generados por herramientas como PHP Codesniffer o similares
+.phpcs.xml
+.phpcs.xml.dist
