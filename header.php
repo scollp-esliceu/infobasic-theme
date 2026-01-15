@@ -3,7 +3,6 @@
 <head>
     <meta charset="<?php bloginfo('charset');?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Benvinguts a la meva web</title>
     <?php wp_head();?>
     <link rel="stylesheet" href="header.css">
@@ -11,10 +10,27 @@
 </head>
 <body <?php body_class()?>>
     <div class="header">
-        <nav class="nav">
-            <a class="nav-link active" href="/">Home</a>
-            <a class="nav-link" href="?page_id=20">Blog</a>
-            <a class="nav-link" href="?page_id=13">Sobre</a>
-            <a class="nav-link" href="?page_id=15">Contacto</a>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <?php
+                    wp_nav_menu( array(
+                        'theme_location'    => 'infobasic_main_menu',
+                        'depth'             => 3,
+                        'container'         => 'div',
+                        'container_class'   => 'collapse navbar-collapse',
+                        'container_id'      => 'navbarNav',
+                        'menu_class'        => 'nav navbar-nav',
+                        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'            => new WP_Bootstrap_Navwalker(),
+                        ) );
+                        ?>
         </nav>
     </div>
