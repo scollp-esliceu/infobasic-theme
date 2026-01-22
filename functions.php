@@ -7,6 +7,8 @@ function infobasic_config(){
     register_nav_menus(
         array(
             'infobasic_main_menu' => 'info basic menú principal',
+            'infobasic_intern' => 'footer intern',
+            'infobasic_extern' => 'footer extern',
         )
     );
 
