@@ -1,5 +1,5 @@
 /*
-Theme Name: INFO BASIC
+Theme Name: INFO BASIC BAK
 Theme URI: https://wordpress.org/
 Author: Sergi Coll Pastor
 Description: Tema wordpress infobasic de 2026, con el que aprendo a crear mis temas a partir de WordPress.
@@ -46,4 +46,41 @@ body {
 
 .dropdown-menu a:hover {
     background-color: var(--main-color-hover);
+}
+
+
+.wp-block-image {
+    padding: 2rem;
+}
+
+.wp-block-image img {
+    border-radius: 1rem;
+}
+
+p{
+    padding: 2rem;
+}
+
+.ofertas-title {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+
+.precio {
+    position: relative;
+    top: -8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.desc {
+    position: relative;
+    top: -11rem;
 }

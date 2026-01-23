@@ -8,14 +8,14 @@
             <div class="col-md-3">
                 <?php
                     wp_nav_menu( array(
-                        'theme_location'    => 'infobasic_footer_interno',
+                        'theme_location'    => 'infobasic_intern',
                         ) );
                         ?>
             </div>
             <div class="col-md-3">
                 <?php
                     wp_nav_menu( array(
-                        'theme_location'    => 'infobasic_footer_externo',
+                        'theme_location'    => 'infobasic_extern',
                         ) );
                         ?>
             </div>
