@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benvinguts a la meva web</title>
     <?php wp_head();?>
-    <link rel="stylesheet" href="header.css">
     
 </head>
 <body <?php body_class()?>>
