@@ -19,8 +19,6 @@ vendor/
 # Ignorar archivos de build/compilación
 dist/
 build/
-*.min.css
-*.min.js
 
 # Ignorar archivos temporales y de backup
 *.bak
