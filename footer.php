@@ -3,7 +3,7 @@
         <div class="container">
             <div class="col-md-6">
                 <p>Ves al inicio</p>
-                <a href="home">Tienda</a>
+                <a href="home">Blog</a>
             </div>
             <div class="col-md-3">
                 <?php

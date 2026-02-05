@@ -1,5 +1,5 @@
 /*
-Theme Name: INFO BASIC BAK
+Theme Name: INFO BASIC (Sergi Coll)
 Theme URI: https://wordpress.org/
 Author: Sergi Coll Pastor
 Description: Tema wordpress infobasic de 2026, con el que aprendo a crear mis temas a partir de WordPress.
@@ -132,22 +132,81 @@ footer a:hover {
     text-align: center;
 }
 
+.card-blog h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3b82f6;
+}
 
-.blog h2{
+.card-ofertas h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3b82f6;
+}
+
+.containers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.card-blog {
+    width: 15%;
     position: relative;
-    left: 10rem;
+    margin-top: 2rem;
+
 }
-.blog a{
+.card-ofertas {
+    width: 15%;
     position: relative;
-    background-color: var(--main-color);
-    padding: 1rem;
-    border-radius: 1rem;
-    left: 10rem;
-    top: 3rem;
+    margin-top: 2rem;
 }
 
-.blog a:hover{
-    background-color: var(--main-color-hover);
-    color: var(--main-color);
+.jumbotron {
+    height: 400px;
+    width: 100%;
 }
 
+.jumbo-tienda {
+    background-image: url(uploads/tienda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+
+.tienda-titol {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: #3b82f6;
+}
+
+.jumbo-camisetas {
+    background-image: url(uploads/camisetas.jpg);
+    background-repeat: no-repeat;
+    border-radius: 0;
+}
+.camisetas-titol {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: #3b82f6;
+}
+
+.jumbo-jeans {
+    background-image: url(uploads/tejanos.jpg);
+    background-repeat: no-repeat;
+    border-radius: 0;
+    background-size: cover;
+}
+.tejanos-titol {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: #3b82f6;
+}
